@@ -1,7 +1,7 @@
 function takeANumber (line, name){
   line.push(name);
   var position = line.indexOf(name)+1
-  return 'Welcome, $(name). you are number $(position) in line.'
+  return 'Welcome, ${name}. you are number ${position} in line.'
 }
 
 function nowServing(line){
@@ -20,8 +20,8 @@ function currentLine(line){
     return "The line is currently empty."
   } else {
     for (let name in line) {
-      var position = line.indexOf(name)+1;
-      reply += ', $(position). $(name)';
+      var position = line.indexOf(name)+1
+      reply += `, ${position}. ${name}`
     }
   }
 
