@@ -26,7 +26,7 @@ function currentLine(line){
       }else {
         reply += `, ${position}. ${line[i]}`
       }
-        
+
     }
   }
 
