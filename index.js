@@ -21,7 +21,7 @@ function currentLine(line){
   } else {
     for (let name in line) {
       var position = line.indexOf(name)+1
-      reply += `, ${position}. ${name}`
+      reply += `${name}`
     }
   }
 
