@@ -25,5 +25,5 @@ function currentLine(line){
     }
   }
 
-  return line
+  return reply
 }
