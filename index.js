@@ -19,9 +19,9 @@ function currentLine(line){
   if (line.length == 0) {
     return "The line is currently empty."
   } else {
-    for (let name in line) {
+    for (let i in line) {
       var position = line.indexOf(name)+1
-      reply += `${name}`
+      reply += `, ${i}. ${line[i]}`
     }
   }
 
