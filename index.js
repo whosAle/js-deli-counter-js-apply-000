@@ -22,7 +22,7 @@ function currentLine(line){
     for (var i = 0; i < line.length; i++) {
       var position = i+1;
       if (i == 0) {
-        reply += `${position}. ${line[i]}`
+        reply += ` ${position}. ${line[i]}`
       }else {
         reply += `, ${position}. ${line[i]}`
       }
