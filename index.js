@@ -10,7 +10,7 @@ function nowServing(line){
   } else if (line.length == 0) {
     return "There is nobody waiting to be served!"
   } else {
-    return "Currently serving "+ line.shift()
+    return "Currently serving "+ line.shift() + "."
   }
 }
 
@@ -19,7 +19,7 @@ function currentLine(line){
   if (line.length == 0) {
     return "The line is currently empty."
   } else {
-    for (name in line) {
+    for (let name in line) {
       var position = line.indexOf(name)+1
       reply += "${position}. ${name}, "
     }
